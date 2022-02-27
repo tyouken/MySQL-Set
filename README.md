@@ -1,2 +1,2 @@
 # MySQL-Set
-Write something about MySQL
+Write something about MySQL when i use it.
