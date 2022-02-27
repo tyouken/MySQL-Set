@@ -1,0 +1,13 @@
+配置MySQL的主从复制，从机的server-uuid与主机相同(冲突)
+辛苦在VMware中新建了一台虚拟机，在其中安装了常用软件(MySQL)并作了各种配置，
+为了省事，用VMware的clone功能快速克隆出另外一台新虚拟机，用以测试MySQL的主从复制功能。
+
+#可能出现如下问题：
+mysql> show slave status\G;
+
+
+
+/var/lib/mysql
+修改auto.cnf中的uuid值，或者删除该文件(删除后MySQL启动时会重新建立)
+server-uuid=3e2ae2e2-8e41-11ec-927a-000c29000562
+重启MySQL
