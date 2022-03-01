@@ -8,7 +8,8 @@ Slave_IO_Running: No
 。。。。。。。
 Last_IO_Error: Fatal error: The slave I/O thread stops because master and slave have equal MySQL server UUIDs; these UUIDs must be different for replication to work.
 。。。。。。。
-<img src="https://github.com/tyouken/MySQL-series/raw/main/graph/MySQL%20server-uuid%20conflict.jpg" >
+<img src="https://github.com/tyouken/MySQL-series/raw/main/graph/MySQL%20server-uuid%20conflict.jpg" />
+![pic](https://github.com/tyouken/MySQL-series/raw/main/graph/MySQL%20server-uuid%20conflict.jpg)
 cd /var/lib/mysql
 修改auto.cnf文件中的server-uuid值，或者删除该文件(删除后，MySQL启动时会重建)
 
