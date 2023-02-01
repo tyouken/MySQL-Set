@@ -7,7 +7,8 @@ vim ifcfg-ens33
 ```
 BOOTPROTO="static"
 IPADDR="192.168.100.100"
-```
+
 保存后退出vim
+```
 - 重启网络：
 `service network restart`
